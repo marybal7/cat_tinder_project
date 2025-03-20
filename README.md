@@ -1,16 +1,8 @@
-# cat_tinder
+# Cat Tinder
 
-A new Flutter project.
+Cat Tinder - это популярное приложение для кошачьих знакомств, которое позволяет выбирать понравившихся котиков. Можно лайкать котиков, которые пришлись по душе, свайпом вправо или нажатием на соответствующую кнопку, либо свайпнуть влево и пропустить котика. Кроме того, можно ознакомиться с подробной информацией о каждом котике: достаточно нажать на картинку, и на отдельном экране будет подробное описание кота, а также его страна происхождения, продолжительность жизни и темперамент. Вернуться на карточки с котиками можно повторным нажатием на кота, либо с помощью кнопки "Back". Приятного просмотра!
 
-## Getting Started
+Актуальную версию приложения можно скачать по ссылке: https://github.com/marybal7/cat_tinder_project/blob/main/build/app/outputs/flutter-apk/app-release.apk
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Page with cat cards](https://github.com/marybal7/cat_tinder_project/blob/main/demo_images/cat_tinder_demo.png)
+![Page with cat info](https://github.com/marybal7/cat_tinder_project/blob/main/demo_images/cat_tinder_demo_info.png)
