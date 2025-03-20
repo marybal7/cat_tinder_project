@@ -1,4 +1,4 @@
-#Fri Mar 21 00:39:50 MSK 2025
+#Thu Mar 20 21:52:41 MSK 2025
 base.0=/home/marypan/AndroidStudioProjects/cat_tinder/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

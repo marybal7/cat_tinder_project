@@ -79,13 +79,13 @@ class _CatScreenState extends State<CatScreen> {
         _image = Image.network(
           _catImageUrl!,
           width: 320,
-          height: 550,
+          height: 500,
           fit: BoxFit.cover,
         );
         _cards = Container(
           alignment: Alignment.center,
           width: 400,
-          height: 600,
+          height: 550,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             color: Color.fromARGB(255, 73, 225, 70),
