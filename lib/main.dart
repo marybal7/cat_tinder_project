@@ -78,14 +78,14 @@ class _CatScreenState extends State<CatScreen> {
 
         _image = Image.network(
           _catImageUrl!,
-          width: 320,
-          height: 500,
+          width: MediaQuery.of(context).size.width * 0.7,
+          height: MediaQuery.of(context).size.height * 0.5,
           fit: BoxFit.cover,
         );
         _cards = Container(
           alignment: Alignment.center,
-          width: 400,
-          height: 550,
+          width: MediaQuery.of(context).size.width * 0.8,
+          height: MediaQuery.of(context).size.height * 0.6,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             color: Color.fromARGB(255, 73, 225, 70),
@@ -183,14 +183,14 @@ class _CatScreenState extends State<CatScreen> {
                       onPressed: _dislikeCat,
                       text: "Dislike",
                       color: Color.fromARGB(255, 175, 255, 153),
-                      size: Size(100, 20),
+                      size: Size(MediaQuery.of(context).size.width * 0.4, 50),
                     ),
                     const SizedBox(width: 10),
                     CustomButton(
                       onPressed: _likeCat,
                       text: "Like",
                       color: Color.fromARGB(255, 0, 255, 51),
-                      size: Size(100, 20),
+                      size: Size(MediaQuery.of(context).size.width * 0.4, 50),
                     ),
                   ],
                 ),
@@ -260,8 +260,8 @@ class CatInformation extends StatelessWidget {
             Navigator.pop(context);
           },
           child: SizedBox(
-            width: 400,
-            height: 700,
+            width: MediaQuery.of(context).size.width * 0.9,
+            height: MediaQuery.of(context).size.height * 0.8,
             child: Stack(
               alignment: Alignment.center,
               children: [
