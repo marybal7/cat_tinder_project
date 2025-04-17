@@ -10,5 +10,6 @@
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/flutter_assets/.env
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
