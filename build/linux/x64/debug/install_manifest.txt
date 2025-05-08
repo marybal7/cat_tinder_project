@@ -1,6 +1,8 @@
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/cat_tinder
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/icudtl.dat
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/lib/libsqlite3_flutter_libs_plugin.so
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/lib/native_assets.json
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/flutter_assets/NativeAssetsManifest.json
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/paws_background.png

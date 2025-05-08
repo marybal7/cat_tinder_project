@@ -1,0 +1,18 @@
+{
+  "elements": {},
+  "imports": [
+    "package:cached_network_image/cached_network_image.dart",
+    "package:flutter/material.dart",
+    "package:flutter_card_swiper/flutter_card_swiper.dart",
+    "package:flutter/scheduler.dart",
+    "package:provider/provider.dart",
+    "package:cat_tinder/core/di/setup.dart",
+    "package:cat_tinder/domain/models/cat.dart",
+    "package:cat_tinder/domain/usecases/fetch_cat_usecase.dart",
+    "package:cat_tinder/presentation/providers/liked_cats_provider.dart",
+    "package:cat_tinder/presentation/widgets/custom_button.dart",
+    "package:cat_tinder/presentation/screens/cat_information.dart",
+    "package:cat_tinder/presentation/screens/liked_cats_screen.dart",
+    "package:connectivity_plus/connectivity_plus.dart"
+  ]
+}

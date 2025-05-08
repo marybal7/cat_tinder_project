@@ -1,0 +1,11 @@
+# ninja log v5
+0	206	1746732278951409562	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-mkdir	9faefc641f418e0d
+206	7668	1746732286414373408	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-download	c580372f35251b61
+7668	7704	1746732286451373228	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-update	d07c8f75f22275dc
+7669	7709	1746732286454373214	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-patch	262e287acf7adf25
+7709	7745	1746732286491373034	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-configure	9157a593780f94cf
+7745	7791	1746732286536372816	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-build	a1eaabf045c06f28
+7791	7841	1746732286586372574	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-install	98ec003c9c03b56e
+7841	7891	1746732286637372327	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-test	7ef494a199f004b
+7891	7952	1746732286697372036	CMakeFiles/sqlite3-populate-complete	c3ab4e99ad98b4c9
+7891	7952	1746732286697372036	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-done	c3ab4e99ad98b4c9

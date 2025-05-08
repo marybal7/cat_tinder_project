@@ -1,0 +1,808 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'database.dart';
+
+// ignore_for_file: type=lint
+class $CatsTable extends Cats with TableInfo<$CatsTable, CatEntity> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $CatsTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _idMeta = const VerificationMeta('id');
+  @override
+  late final GeneratedColumn<String> id = GeneratedColumn<String>(
+    'id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _imageUrlMeta = const VerificationMeta(
+    'imageUrl',
+  );
+  @override
+  late final GeneratedColumn<String> imageUrl = GeneratedColumn<String>(
+    'image_url',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _imageDataMeta = const VerificationMeta(
+    'imageData',
+  );
+  @override
+  late final GeneratedColumn<Uint8List> imageData = GeneratedColumn<Uint8List>(
+    'image_data',
+    aliasedName,
+    true,
+    type: DriftSqlType.blob,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _breedNameMeta = const VerificationMeta(
+    'breedName',
+  );
+  @override
+  late final GeneratedColumn<String> breedName = GeneratedColumn<String>(
+    'breed_name',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _originMeta = const VerificationMeta('origin');
+  @override
+  late final GeneratedColumn<String> origin = GeneratedColumn<String>(
+    'origin',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _temperamentMeta = const VerificationMeta(
+    'temperament',
+  );
+  @override
+  late final GeneratedColumn<String> temperament = GeneratedColumn<String>(
+    'temperament',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _descriptionMeta = const VerificationMeta(
+    'description',
+  );
+  @override
+  late final GeneratedColumn<String> description = GeneratedColumn<String>(
+    'description',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _lifespanMeta = const VerificationMeta(
+    'lifespan',
+  );
+  @override
+  late final GeneratedColumn<String> lifespan = GeneratedColumn<String>(
+    'lifespan',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    id,
+    imageUrl,
+    imageData,
+    breedName,
+    origin,
+    temperament,
+    description,
+    lifespan,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'cats';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<CatEntity> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('id')) {
+      context.handle(_idMeta, id.isAcceptableOrUnknown(data['id']!, _idMeta));
+    } else if (isInserting) {
+      context.missing(_idMeta);
+    }
+    if (data.containsKey('image_url')) {
+      context.handle(
+        _imageUrlMeta,
+        imageUrl.isAcceptableOrUnknown(data['image_url']!, _imageUrlMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_imageUrlMeta);
+    }
+    if (data.containsKey('image_data')) {
+      context.handle(
+        _imageDataMeta,
+        imageData.isAcceptableOrUnknown(data['image_data']!, _imageDataMeta),
+      );
+    }
+    if (data.containsKey('breed_name')) {
+      context.handle(
+        _breedNameMeta,
+        breedName.isAcceptableOrUnknown(data['breed_name']!, _breedNameMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_breedNameMeta);
+    }
+    if (data.containsKey('origin')) {
+      context.handle(
+        _originMeta,
+        origin.isAcceptableOrUnknown(data['origin']!, _originMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_originMeta);
+    }
+    if (data.containsKey('temperament')) {
+      context.handle(
+        _temperamentMeta,
+        temperament.isAcceptableOrUnknown(
+          data['temperament']!,
+          _temperamentMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_temperamentMeta);
+    }
+    if (data.containsKey('description')) {
+      context.handle(
+        _descriptionMeta,
+        description.isAcceptableOrUnknown(
+          data['description']!,
+          _descriptionMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_descriptionMeta);
+    }
+    if (data.containsKey('lifespan')) {
+      context.handle(
+        _lifespanMeta,
+        lifespan.isAcceptableOrUnknown(data['lifespan']!, _lifespanMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_lifespanMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {id};
+  @override
+  CatEntity map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return CatEntity(
+      id:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}id'],
+          )!,
+      imageUrl:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}image_url'],
+          )!,
+      imageData: attachedDatabase.typeMapping.read(
+        DriftSqlType.blob,
+        data['${effectivePrefix}image_data'],
+      ),
+      breedName:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}breed_name'],
+          )!,
+      origin:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}origin'],
+          )!,
+      temperament:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}temperament'],
+          )!,
+      description:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}description'],
+          )!,
+      lifespan:
+          attachedDatabase.typeMapping.read(
+            DriftSqlType.string,
+            data['${effectivePrefix}lifespan'],
+          )!,
+    );
+  }
+
+  @override
+  $CatsTable createAlias(String alias) {
+    return $CatsTable(attachedDatabase, alias);
+  }
+}
+
+class CatEntity extends DataClass implements Insertable<CatEntity> {
+  final String id;
+  final String imageUrl;
+  final Uint8List? imageData;
+  final String breedName;
+  final String origin;
+  final String temperament;
+  final String description;
+  final String lifespan;
+  const CatEntity({
+    required this.id,
+    required this.imageUrl,
+    this.imageData,
+    required this.breedName,
+    required this.origin,
+    required this.temperament,
+    required this.description,
+    required this.lifespan,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['id'] = Variable<String>(id);
+    map['image_url'] = Variable<String>(imageUrl);
+    if (!nullToAbsent || imageData != null) {
+      map['image_data'] = Variable<Uint8List>(imageData);
+    }
+    map['breed_name'] = Variable<String>(breedName);
+    map['origin'] = Variable<String>(origin);
+    map['temperament'] = Variable<String>(temperament);
+    map['description'] = Variable<String>(description);
+    map['lifespan'] = Variable<String>(lifespan);
+    return map;
+  }
+
+  CatsCompanion toCompanion(bool nullToAbsent) {
+    return CatsCompanion(
+      id: Value(id),
+      imageUrl: Value(imageUrl),
+      imageData:
+          imageData == null && nullToAbsent
+              ? const Value.absent()
+              : Value(imageData),
+      breedName: Value(breedName),
+      origin: Value(origin),
+      temperament: Value(temperament),
+      description: Value(description),
+      lifespan: Value(lifespan),
+    );
+  }
+
+  factory CatEntity.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return CatEntity(
+      id: serializer.fromJson<String>(json['id']),
+      imageUrl: serializer.fromJson<String>(json['imageUrl']),
+      imageData: serializer.fromJson<Uint8List?>(json['imageData']),
+      breedName: serializer.fromJson<String>(json['breedName']),
+      origin: serializer.fromJson<String>(json['origin']),
+      temperament: serializer.fromJson<String>(json['temperament']),
+      description: serializer.fromJson<String>(json['description']),
+      lifespan: serializer.fromJson<String>(json['lifespan']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'id': serializer.toJson<String>(id),
+      'imageUrl': serializer.toJson<String>(imageUrl),
+      'imageData': serializer.toJson<Uint8List?>(imageData),
+      'breedName': serializer.toJson<String>(breedName),
+      'origin': serializer.toJson<String>(origin),
+      'temperament': serializer.toJson<String>(temperament),
+      'description': serializer.toJson<String>(description),
+      'lifespan': serializer.toJson<String>(lifespan),
+    };
+  }
+
+  CatEntity copyWith({
+    String? id,
+    String? imageUrl,
+    Value<Uint8List?> imageData = const Value.absent(),
+    String? breedName,
+    String? origin,
+    String? temperament,
+    String? description,
+    String? lifespan,
+  }) => CatEntity(
+    id: id ?? this.id,
+    imageUrl: imageUrl ?? this.imageUrl,
+    imageData: imageData.present ? imageData.value : this.imageData,
+    breedName: breedName ?? this.breedName,
+    origin: origin ?? this.origin,
+    temperament: temperament ?? this.temperament,
+    description: description ?? this.description,
+    lifespan: lifespan ?? this.lifespan,
+  );
+  CatEntity copyWithCompanion(CatsCompanion data) {
+    return CatEntity(
+      id: data.id.present ? data.id.value : this.id,
+      imageUrl: data.imageUrl.present ? data.imageUrl.value : this.imageUrl,
+      imageData: data.imageData.present ? data.imageData.value : this.imageData,
+      breedName: data.breedName.present ? data.breedName.value : this.breedName,
+      origin: data.origin.present ? data.origin.value : this.origin,
+      temperament:
+          data.temperament.present ? data.temperament.value : this.temperament,
+      description:
+          data.description.present ? data.description.value : this.description,
+      lifespan: data.lifespan.present ? data.lifespan.value : this.lifespan,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('CatEntity(')
+          ..write('id: $id, ')
+          ..write('imageUrl: $imageUrl, ')
+          ..write('imageData: $imageData, ')
+          ..write('breedName: $breedName, ')
+          ..write('origin: $origin, ')
+          ..write('temperament: $temperament, ')
+          ..write('description: $description, ')
+          ..write('lifespan: $lifespan')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    id,
+    imageUrl,
+    $driftBlobEquality.hash(imageData),
+    breedName,
+    origin,
+    temperament,
+    description,
+    lifespan,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is CatEntity &&
+          other.id == this.id &&
+          other.imageUrl == this.imageUrl &&
+          $driftBlobEquality.equals(other.imageData, this.imageData) &&
+          other.breedName == this.breedName &&
+          other.origin == this.origin &&
+          other.temperament == this.temperament &&
+          other.description == this.description &&
+          other.lifespan == this.lifespan);
+}
+
+class CatsCompanion extends UpdateCompanion<CatEntity> {
+  final Value<String> id;
+  final Value<String> imageUrl;
+  final Value<Uint8List?> imageData;
+  final Value<String> breedName;
+  final Value<String> origin;
+  final Value<String> temperament;
+  final Value<String> description;
+  final Value<String> lifespan;
+  final Value<int> rowid;
+  const CatsCompanion({
+    this.id = const Value.absent(),
+    this.imageUrl = const Value.absent(),
+    this.imageData = const Value.absent(),
+    this.breedName = const Value.absent(),
+    this.origin = const Value.absent(),
+    this.temperament = const Value.absent(),
+    this.description = const Value.absent(),
+    this.lifespan = const Value.absent(),
+    this.rowid = const Value.absent(),
+  });
+  CatsCompanion.insert({
+    required String id,
+    required String imageUrl,
+    this.imageData = const Value.absent(),
+    required String breedName,
+    required String origin,
+    required String temperament,
+    required String description,
+    required String lifespan,
+    this.rowid = const Value.absent(),
+  }) : id = Value(id),
+       imageUrl = Value(imageUrl),
+       breedName = Value(breedName),
+       origin = Value(origin),
+       temperament = Value(temperament),
+       description = Value(description),
+       lifespan = Value(lifespan);
+  static Insertable<CatEntity> custom({
+    Expression<String>? id,
+    Expression<String>? imageUrl,
+    Expression<Uint8List>? imageData,
+    Expression<String>? breedName,
+    Expression<String>? origin,
+    Expression<String>? temperament,
+    Expression<String>? description,
+    Expression<String>? lifespan,
+    Expression<int>? rowid,
+  }) {
+    return RawValuesInsertable({
+      if (id != null) 'id': id,
+      if (imageUrl != null) 'image_url': imageUrl,
+      if (imageData != null) 'image_data': imageData,
+      if (breedName != null) 'breed_name': breedName,
+      if (origin != null) 'origin': origin,
+      if (temperament != null) 'temperament': temperament,
+      if (description != null) 'description': description,
+      if (lifespan != null) 'lifespan': lifespan,
+      if (rowid != null) 'rowid': rowid,
+    });
+  }
+
+  CatsCompanion copyWith({
+    Value<String>? id,
+    Value<String>? imageUrl,
+    Value<Uint8List?>? imageData,
+    Value<String>? breedName,
+    Value<String>? origin,
+    Value<String>? temperament,
+    Value<String>? description,
+    Value<String>? lifespan,
+    Value<int>? rowid,
+  }) {
+    return CatsCompanion(
+      id: id ?? this.id,
+      imageUrl: imageUrl ?? this.imageUrl,
+      imageData: imageData ?? this.imageData,
+      breedName: breedName ?? this.breedName,
+      origin: origin ?? this.origin,
+      temperament: temperament ?? this.temperament,
+      description: description ?? this.description,
+      lifespan: lifespan ?? this.lifespan,
+      rowid: rowid ?? this.rowid,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (id.present) {
+      map['id'] = Variable<String>(id.value);
+    }
+    if (imageUrl.present) {
+      map['image_url'] = Variable<String>(imageUrl.value);
+    }
+    if (imageData.present) {
+      map['image_data'] = Variable<Uint8List>(imageData.value);
+    }
+    if (breedName.present) {
+      map['breed_name'] = Variable<String>(breedName.value);
+    }
+    if (origin.present) {
+      map['origin'] = Variable<String>(origin.value);
+    }
+    if (temperament.present) {
+      map['temperament'] = Variable<String>(temperament.value);
+    }
+    if (description.present) {
+      map['description'] = Variable<String>(description.value);
+    }
+    if (lifespan.present) {
+      map['lifespan'] = Variable<String>(lifespan.value);
+    }
+    if (rowid.present) {
+      map['rowid'] = Variable<int>(rowid.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('CatsCompanion(')
+          ..write('id: $id, ')
+          ..write('imageUrl: $imageUrl, ')
+          ..write('imageData: $imageData, ')
+          ..write('breedName: $breedName, ')
+          ..write('origin: $origin, ')
+          ..write('temperament: $temperament, ')
+          ..write('description: $description, ')
+          ..write('lifespan: $lifespan, ')
+          ..write('rowid: $rowid')
+          ..write(')'))
+        .toString();
+  }
+}
+
+abstract class _$AppDatabase extends GeneratedDatabase {
+  _$AppDatabase(QueryExecutor e) : super(e);
+  $AppDatabaseManager get managers => $AppDatabaseManager(this);
+  late final $CatsTable cats = $CatsTable(this);
+  @override
+  Iterable<TableInfo<Table, Object?>> get allTables =>
+      allSchemaEntities.whereType<TableInfo<Table, Object?>>();
+  @override
+  List<DatabaseSchemaEntity> get allSchemaEntities => [cats];
+}
+
+typedef $$CatsTableCreateCompanionBuilder =
+    CatsCompanion Function({
+      required String id,
+      required String imageUrl,
+      Value<Uint8List?> imageData,
+      required String breedName,
+      required String origin,
+      required String temperament,
+      required String description,
+      required String lifespan,
+      Value<int> rowid,
+    });
+typedef $$CatsTableUpdateCompanionBuilder =
+    CatsCompanion Function({
+      Value<String> id,
+      Value<String> imageUrl,
+      Value<Uint8List?> imageData,
+      Value<String> breedName,
+      Value<String> origin,
+      Value<String> temperament,
+      Value<String> description,
+      Value<String> lifespan,
+      Value<int> rowid,
+    });
+
+class $$CatsTableFilterComposer extends Composer<_$AppDatabase, $CatsTable> {
+  $$CatsTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<String> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get imageUrl => $composableBuilder(
+    column: $table.imageUrl,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<Uint8List> get imageData => $composableBuilder(
+    column: $table.imageData,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get breedName => $composableBuilder(
+    column: $table.breedName,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get origin => $composableBuilder(
+    column: $table.origin,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get temperament => $composableBuilder(
+    column: $table.temperament,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get description => $composableBuilder(
+    column: $table.description,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lifespan => $composableBuilder(
+    column: $table.lifespan,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $$CatsTableOrderingComposer extends Composer<_$AppDatabase, $CatsTable> {
+  $$CatsTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<String> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get imageUrl => $composableBuilder(
+    column: $table.imageUrl,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<Uint8List> get imageData => $composableBuilder(
+    column: $table.imageData,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get breedName => $composableBuilder(
+    column: $table.breedName,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get origin => $composableBuilder(
+    column: $table.origin,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get temperament => $composableBuilder(
+    column: $table.temperament,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get description => $composableBuilder(
+    column: $table.description,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lifespan => $composableBuilder(
+    column: $table.lifespan,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $$CatsTableAnnotationComposer
+    extends Composer<_$AppDatabase, $CatsTable> {
+  $$CatsTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<String> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<String> get imageUrl =>
+      $composableBuilder(column: $table.imageUrl, builder: (column) => column);
+
+  GeneratedColumn<Uint8List> get imageData =>
+      $composableBuilder(column: $table.imageData, builder: (column) => column);
+
+  GeneratedColumn<String> get breedName =>
+      $composableBuilder(column: $table.breedName, builder: (column) => column);
+
+  GeneratedColumn<String> get origin =>
+      $composableBuilder(column: $table.origin, builder: (column) => column);
+
+  GeneratedColumn<String> get temperament => $composableBuilder(
+    column: $table.temperament,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get description => $composableBuilder(
+    column: $table.description,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get lifespan =>
+      $composableBuilder(column: $table.lifespan, builder: (column) => column);
+}
+
+class $$CatsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $CatsTable,
+          CatEntity,
+          $$CatsTableFilterComposer,
+          $$CatsTableOrderingComposer,
+          $$CatsTableAnnotationComposer,
+          $$CatsTableCreateCompanionBuilder,
+          $$CatsTableUpdateCompanionBuilder,
+          (CatEntity, BaseReferences<_$AppDatabase, $CatsTable, CatEntity>),
+          CatEntity,
+          PrefetchHooks Function()
+        > {
+  $$CatsTableTableManager(_$AppDatabase db, $CatsTable table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer:
+              () => $$CatsTableFilterComposer($db: db, $table: table),
+          createOrderingComposer:
+              () => $$CatsTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer:
+              () => $$CatsTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<String> id = const Value.absent(),
+                Value<String> imageUrl = const Value.absent(),
+                Value<Uint8List?> imageData = const Value.absent(),
+                Value<String> breedName = const Value.absent(),
+                Value<String> origin = const Value.absent(),
+                Value<String> temperament = const Value.absent(),
+                Value<String> description = const Value.absent(),
+                Value<String> lifespan = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => CatsCompanion(
+                id: id,
+                imageUrl: imageUrl,
+                imageData: imageData,
+                breedName: breedName,
+                origin: origin,
+                temperament: temperament,
+                description: description,
+                lifespan: lifespan,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required String id,
+                required String imageUrl,
+                Value<Uint8List?> imageData = const Value.absent(),
+                required String breedName,
+                required String origin,
+                required String temperament,
+                required String description,
+                required String lifespan,
+                Value<int> rowid = const Value.absent(),
+              }) => CatsCompanion.insert(
+                id: id,
+                imageUrl: imageUrl,
+                imageData: imageData,
+                breedName: breedName,
+                origin: origin,
+                temperament: temperament,
+                description: description,
+                lifespan: lifespan,
+                rowid: rowid,
+              ),
+          withReferenceMapper:
+              (p0) =>
+                  p0
+                      .map(
+                        (e) => (
+                          e.readTable(table),
+                          BaseReferences(db, table, e),
+                        ),
+                      )
+                      .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $$CatsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $CatsTable,
+      CatEntity,
+      $$CatsTableFilterComposer,
+      $$CatsTableOrderingComposer,
+      $$CatsTableAnnotationComposer,
+      $$CatsTableCreateCompanionBuilder,
+      $$CatsTableUpdateCompanionBuilder,
+      (CatEntity, BaseReferences<_$AppDatabase, $CatsTable, CatEntity>),
+      CatEntity,
+      PrefetchHooks Function()
+    >;
+
+class $AppDatabaseManager {
+  final _$AppDatabase _db;
+  $AppDatabaseManager(this._db);
+  $$CatsTableTableManager get cats => $$CatsTableTableManager(_db, _db.cats);
+}

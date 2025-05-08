@@ -1,0 +1,10 @@
+{
+  "elements": {},
+  "imports": [
+    "package:flutter/material.dart",
+    "package:shared_preferences/shared_preferences.dart",
+    "package:cat_tinder/domain/models/cat.dart",
+    "package:cat_tinder/domain/models/liked_cat.dart",
+    "package:cat_tinder/domain/usecases/manage_liked_cats.dart"
+  ]
+}

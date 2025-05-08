@@ -1,0 +1,8 @@
+{
+  "elements": {},
+  "imports": [
+    "package:cat_tinder/domain/models/cat.dart",
+    "package:cat_tinder/domain/models/liked_cat.dart",
+    "package:cat_tinder/domain/repositories/liked_cat_repository.dart"
+  ]
+}

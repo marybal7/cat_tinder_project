@@ -1,0 +1,12 @@
+{
+  "elements": {},
+  "imports": [
+    "package:connectivity_plus/connectivity_plus.dart",
+    "package:flutter/foundation.dart",
+    "package:http/http.dart",
+    "package:cat_tinder/domain/models/cat.dart",
+    "package:cat_tinder/domain/repositories/cat_repository.dart",
+    "package:cat_tinder/data/services/cat_api_service.dart",
+    "package:cat_tinder/data/database.dart"
+  ]
+}

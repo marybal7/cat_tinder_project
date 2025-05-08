@@ -1,0 +1,8 @@
+{
+  "elements": {},
+  "imports": [
+    "package:mocktail/mocktail.dart",
+    "package:shared_preferences/shared_preferences.dart",
+    "package:cat_tinder/domain/usecases/manage_liked_cats.dart"
+  ]
+}

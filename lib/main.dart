@@ -6,10 +6,10 @@ import 'presentation/providers/liked_cats_provider.dart';
 import 'presentation/screens/cat_screen.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
 
-  // Initialize dependency injection
-  setupDependencies();
+  await setupDependencies();
 
   runApp(const CatTinderApp());
 }
@@ -39,7 +39,7 @@ class CatTinderApp extends StatelessWidget {
                   ),
                 ),
               ),
-              CatScreen(),
+              const CatScreen(),
             ],
           ),
         ),

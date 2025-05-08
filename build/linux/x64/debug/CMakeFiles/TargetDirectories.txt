@@ -18,3 +18,10 @@
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/runner/CMakeFiles/rebuild_cache.dir
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/runner/CMakeFiles/edit_cache.dir
 /home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/runner/CMakeFiles/cat_tinder.dir
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs/CMakeFiles/install/strip.dir
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs/CMakeFiles/install/local.dir
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs/CMakeFiles/edit_cache.dir
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs/CMakeFiles/install.dir
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs/CMakeFiles/list_install_components.dir
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs/CMakeFiles/rebuild_cache.dir
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs/CMakeFiles/sqlite3_flutter_libs_plugin.dir

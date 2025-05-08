@@ -1,0 +1,11 @@
+{
+  "elements": {},
+  "imports": [
+    "package:flutter/material.dart",
+    "package:provider/provider.dart",
+    "package:cat_tinder/presentation/providers/liked_cats_provider.dart",
+    "package:cat_tinder/presentation/screens/cat_information.dart",
+    "package:cat_tinder/presentation/widgets/date_of_like.dart",
+    "package:cached_network_image/cached_network_image.dart"
+  ]
+}

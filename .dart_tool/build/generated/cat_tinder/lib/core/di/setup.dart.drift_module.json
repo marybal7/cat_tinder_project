@@ -1,0 +1,15 @@
+{
+  "elements": {},
+  "imports": [
+    "package:connectivity_plus/connectivity_plus.dart",
+    "package:get_it/get_it.dart",
+    "package:shared_preferences/shared_preferences.dart",
+    "package:cat_tinder/data/repositories/cat_repository_impl.dart",
+    "package:cat_tinder/data/services/cat_api_service.dart",
+    "package:cat_tinder/domain/repositories/cat_repository.dart",
+    "package:cat_tinder/domain/usecases/fetch_cat_usecase.dart",
+    "package:cat_tinder/domain/usecases/manage_liked_cats.dart",
+    "package:cat_tinder/presentation/providers/liked_cats_provider.dart",
+    "package:cat_tinder/data/database.dart"
+  ]
+}

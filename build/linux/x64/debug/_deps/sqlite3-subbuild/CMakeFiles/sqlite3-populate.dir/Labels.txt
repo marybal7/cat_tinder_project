@@ -1,0 +1,14 @@
+# Target labels
+ sqlite3-populate
+# Source files and their labels
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/CMakeFiles/sqlite3-populate
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/CMakeFiles/sqlite3-populate.rule
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/CMakeFiles/sqlite3-populate-complete.rule
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-install.rule
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-mkdir.rule
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-download.rule
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-update.rule
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-patch.rule
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-configure.rule
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-build.rule
+/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-test.rule

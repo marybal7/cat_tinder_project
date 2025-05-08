@@ -13,21 +13,36 @@ class CatApiService {
       throw Exception('API key is missing');
     }
 
-    final url = Uri.parse("$_baseUrl&api_key=$_apiKey");
-    final response = await http.get(url);
+    const maxRetries = 3;
+    var attempt = 0;
 
-    if (response.statusCode == 200) {
-      final List data = json.decode(response.body);
-      if (data.isEmpty) {
-        throw Exception('No cat data received from API');
-      }
+    while (attempt < maxRetries) {
       try {
-        return Cat.fromJson(data[0]);
+        final url = Uri.parse("$_baseUrl&api_key=$_apiKey");
+        final response = await http
+            .get(url)
+            .timeout(const Duration(seconds: 5));
+        if (response.statusCode == 200) {
+          final List data = json.decode(response.body);
+          if (data.isEmpty) {
+            throw Exception('No cat data received from API');
+          }
+          try {
+            return Cat.fromJson(data[0]);
+          } catch (e) {
+            throw Exception('Failed to parse cat data: $e');
+          }
+        } else {
+          throw Exception('Failed to load cat (${response.statusCode})');
+        }
       } catch (e) {
-        throw Exception('Failed to parse cat data: $e');
+        attempt++;
+        if (attempt == maxRetries) {
+          rethrow;
+        }
+        await Future.delayed(Duration(seconds: attempt * 2));
       }
-    } else {
-      throw Exception('Failed to load cat (${response.statusCode})');
     }
+    throw Exception('Failed to load cat after $maxRetries attempts');
   }
 }

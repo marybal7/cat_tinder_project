@@ -1,0 +1,8 @@
+{
+  "elements": {},
+  "imports": [
+    "package:cached_network_image/cached_network_image.dart",
+    "package:flutter/material.dart",
+    "package:cat_tinder/domain/models/cat.dart"
+  ]
+}

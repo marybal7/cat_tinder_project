@@ -1,0 +1,6 @@
+{
+  "elements": {},
+  "imports": [
+    "package:cat_tinder/domain/models/breed_info.dart"
+  ]
+}

@@ -1,4 +1,4 @@
-name: car_tinder
+name: cat_tinder
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -41,6 +41,13 @@ dependencies:
   provider: ^6.1.4
   intl: ^0.20.2
   cached_network_image: ^3.2.3
+  drift: ^2.11.0
+  sqlite3_flutter_libs: ^0.5.15
+  path_provider: ^2.0.15
+  path: ^1.8.3
+  shared_preferences: ^2.2.0
+  connectivity_plus: ^5.0.2
+  mocktail: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -53,6 +60,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  test: ^1.24.0
+  build_runner: ^2.4.6
+  drift_dev: ^2.11.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

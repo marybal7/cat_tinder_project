@@ -63,7 +63,7 @@ file(INSTALL DESTINATION "/home/marypan/AndroidStudioProjects/cat_tinder/build/l
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/cat_tinder")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/cat_tinder"
-         OLD_RPATH "/home/marypan/AndroidStudioProjects/cat_tinder/linux/flutter/ephemeral:"
+         OLD_RPATH "/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs:/home/marypan/AndroidStudioProjects/cat_tinder/linux/flutter/ephemeral:"
          NEW_RPATH "$ORIGIN/lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/snap/flutter/current/usr/bin/strip" "$ENV{DESTDIR}/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/cat_tinder")
@@ -93,6 +93,18 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMP
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/marypan/AndroidStudioProjects/cat_tinder/linux/flutter/ephemeral/libflutter_linux_gtk.so")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/lib/libsqlite3_flutter_libs_plugin.so")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs/libsqlite3_flutter_libs_plugin.so")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -129,6 +141,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/flutter/cmake_install.cmake")
   include("/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/runner/cmake_install.cmake")
+  include("/home/marypan/AndroidStudioProjects/cat_tinder/build/linux/x64/debug/plugins/sqlite3_flutter_libs/cmake_install.cmake")
 
 endif()
 

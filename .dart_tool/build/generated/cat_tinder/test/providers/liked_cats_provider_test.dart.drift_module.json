@@ -1,0 +1,14 @@
+{
+  "elements": {},
+  "imports": [
+    "package:flutter_test/flutter_test.dart",
+    "package:mocktail/mocktail.dart",
+    "package:shared_preferences/shared_preferences.dart",
+    "package:cat_tinder/domain/models/cat.dart",
+    "package:cat_tinder/domain/models/liked_cat.dart",
+    "package:cat_tinder/domain/models/breed_info.dart",
+    "package:cat_tinder/domain/usecases/manage_liked_cats.dart",
+    "package:cat_tinder/presentation/providers/liked_cats_provider.dart",
+    "asset:cat_tinder/test/mocks/mocks.dart"
+  ]
+}

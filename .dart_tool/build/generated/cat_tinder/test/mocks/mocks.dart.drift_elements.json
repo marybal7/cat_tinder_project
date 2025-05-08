@@ -1,0 +1,1 @@
+{"valid_import":true,"imports":[{"uri":"package:mocktail/mocktail.dart","transitive":false},{"uri":"package:shared_preferences/shared_preferences.dart","transitive":false},{"uri":"package:cat_tinder/domain/usecases/manage_liked_cats.dart","transitive":false}],"elements":[]}

@@ -1,8 +1,12 @@
+import 'package:cat_tinder/domain/models/cat.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/liked_cats_provider.dart';
 import 'cat_information.dart';
 import '../widgets/date_of_like.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import '../../core/di/setup.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 
 class LikedCatsScreen extends StatefulWidget {
   final VoidCallback decrementCounter;
@@ -15,6 +19,42 @@ class LikedCatsScreen extends StatefulWidget {
 
 class _LikedCatsScreenState extends State<LikedCatsScreen> {
   String? _selectedBreed;
+  bool _isOffline = false;
+  final Map<String, Cat> _cachedCats = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _checkConnectivity();
+    _loadCatsFromDatabase();
+  }
+
+  Future<void> _checkConnectivity() async {
+    final connectivity = getIt<Connectivity>();
+    final result = await connectivity.checkConnectivity();
+    setState(() {
+      _isOffline = result == ConnectivityResult.none;
+    });
+  }
+
+  Future<void> _loadCatsFromDatabase() async {
+    final likedCatsProvider = Provider.of<LikedCatsProvider>(
+      context,
+      listen: false,
+    );
+    for (var likedCat in likedCatsProvider.likedCats) {
+      if (!_cachedCats.containsKey(likedCat.cat.imageUrl)) {
+        final cat = await likedCatsProvider.getCatByImageUrl(
+          likedCat.cat.imageUrl,
+        );
+        if (cat != null) {
+          setState(() {
+            _cachedCats[likedCat.cat.imageUrl] = cat;
+          });
+        }
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -88,10 +128,29 @@ class _LikedCatsScreenState extends State<LikedCatsScreen> {
                 itemCount: filteredCats.length,
                 itemBuilder: (context, index) {
                   final likedCat = filteredCats[index];
-                  final image = Image.network(
-                    likedCat.cat.imageUrl,
-                    fit: BoxFit.cover,
-                  );
+                  final cachedCat = _cachedCats[likedCat.cat.imageUrl];
+                  final image =
+                      cachedCat?.imageData != null
+                          ? Image.memory(
+                            cachedCat!.imageData!,
+                            fit: BoxFit.cover,
+                          )
+                          : (_isOffline
+                              ? const Icon(
+                                Icons.image_not_supported,
+                                color: Colors.grey,
+                              )
+                              : CachedNetworkImage(
+                                imageUrl: likedCat.cat.imageUrl,
+                                fit: BoxFit.cover,
+                                placeholder:
+                                    (context, url) => const Center(
+                                      child: CircularProgressIndicator(),
+                                    ),
+                                errorWidget:
+                                    (context, url, error) =>
+                                        const Icon(Icons.error),
+                              ));
 
                   return ListTile(
                     contentPadding: const EdgeInsets.all(10),
@@ -138,7 +197,7 @@ class _LikedCatsScreenState extends State<LikedCatsScreen> {
                         MaterialPageRoute(
                           builder:
                               (_) => CatInformation(
-                                cat: likedCat.cat,
+                                cat: cachedCat ?? likedCat.cat,
                                 image: image,
                               ),
                         ),

@@ -4,9 +4,37 @@
       jars="/home/marypan/AndroidStudioProjects/cat_tinder/build/app/intermediates/flutter/release/libs.jar"
       resolved="__local_aars__:/home/marypan/AndroidStudioProjects/cat_tinder/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
   <library
+      name=":@@:shared_preferences_android::release"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/1619207796b9525a142ef7a8846478ec/transformed/out/jars/classes.jar:/home/marypan/.gradle/caches/8.10.2/transforms/1619207796b9525a142ef7a8846478ec/transformed/out/jars/libs/R.jar"
+      resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:1.0-SNAPSHOT"
+      partialResultsDir="/home/marypan/AndroidStudioProjects/cat_tinder/build/shared_preferences_android/intermediates/lint_vital_partial_results/release/lintVitalAnalyzeRelease/out"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/1619207796b9525a142ef7a8846478ec/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22@jar"
       jars="/home/marypan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.22/4dabb8248310d833bb6a8b516024a91fd3d275c/kotlin-stdlib-jdk7-1.8.22.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22"/>
+  <library
+      name=":@@:connectivity_plus::release"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/944a5e367da03879f21b0375584eec0a/transformed/out/jars/classes.jar:/home/marypan/.gradle/caches/8.10.2/transforms/944a5e367da03879f21b0375584eec0a/transformed/out/jars/libs/R.jar"
+      resolved="dev.fluttercommunity.plus.connectivity:connectivity_plus:1.0-SNAPSHOT"
+      partialResultsDir="/home/marypan/AndroidStudioProjects/cat_tinder/build/connectivity_plus/intermediates/lint_vital_partial_results/release/lintVitalAnalyzeRelease/out"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/944a5e367da03879f21b0375584eec0a/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
   <library
       name=":@@:path_provider_android::release"
       jars="/home/marypan/.gradle/caches/8.10.2/transforms/3a2c06ef5ca01e57571121e8bae8ceb2/transformed/out/jars/classes.jar:/home/marypan/.gradle/caches/8.10.2/transforms/3a2c06ef5ca01e57571121e8bae8ceb2/transformed/out/jars/libs/R.jar"
@@ -27,6 +55,20 @@
       resolved="com.tekartik.sqflite:sqflite_android:1.0-SNAPSHOT"
       partialResultsDir="/home/marypan/AndroidStudioProjects/cat_tinder/build/sqflite_android/intermediates/lint_vital_partial_results/release/lintVitalAnalyzeRelease/out"
       folder="/home/marypan/.gradle/caches/8.10.2/transforms/cd311974e4ebdde5b52196bbf44e9a06/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name=":@@:sqlite3_flutter_libs::release"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/e86070d0ffe2df7178acd26f3618d11a/transformed/out/jars/classes.jar:/home/marypan/.gradle/caches/8.10.2/transforms/e86070d0ffe2df7178acd26f3618d11a/transformed/out/jars/libs/R.jar"
+      resolved="eu.simonbinder.sqlite3_flutter_libs:sqlite3_flutter_libs:1.0"
+      partialResultsDir="/home/marypan/AndroidStudioProjects/cat_tinder/build/sqlite3_flutter_libs/intermediates/lint_vital_partial_results/release/lintVitalAnalyzeRelease/out"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/e86070d0ffe2df7178acd26f3618d11a/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -170,10 +212,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.customview:customview:1.0.0@aar"
-      jars="/home/marypan/.gradle/caches/8.10.2/transforms/f85bb1d55996e5c6bcd395509e391ec9/transformed/customview-1.0.0/jars/classes.jar"
-      resolved="androidx.customview:customview:1.0.0"
-      folder="/home/marypan/.gradle/caches/8.10.2/transforms/f85bb1d55996e5c6bcd395509e391ec9/transformed/customview-1.0.0"
+      name="androidx.customview:customview:1.1.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/7ba2c056d15ac2bb85e5cc14a5abc112/transformed/customview-1.1.0/jars/classes.jar"
+      resolved="androidx.customview:customview:1.1.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/7ba2c056d15ac2bb85e5cc14a5abc112/transformed/customview-1.1.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -320,13 +362,13 @@
       jars="/home/marypan/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-jvm/1.9.1/b17951747e38bf3986a24431b9ba0d039958aa5f/annotation-jvm-1.9.1.jar"
       resolved="androidx.annotation:annotation-jvm:1.9.1"/>
   <library
-      name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar"
-      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.7.1/c2d86b569f10b7fc7e28d3f50c0eed97897d77a7/kotlinx-coroutines-android-1.7.1.jar"
-      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"/>
+      name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.7.3/38d9cad3a0b03a10453b56577984bdeb48edeed5/kotlinx-coroutines-android-1.7.3.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"/>
   <library
-      name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1@jar"
-      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.7.1/63a0779cf668e2a47d13fda7c3b0c4f8dc7762f4/kotlinx-coroutines-core-jvm-1.7.1.jar"
-      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1"/>
+      name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.3@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.7.3/2b09627576f0989a436a00a4a54b55fa5026fb86/kotlinx-coroutines-core-jvm-1.7.3.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.3"/>
   <library
       name="org.jetbrains.kotlin:kotlin-stdlib:1.9.24@jar"
       jars="/home/marypan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/9928532f12c66ad816a625b3f9984f8368ca6d2b/kotlin-stdlib-1.9.24.jar"
@@ -391,6 +433,253 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="androidx.preference:preference:1.2.1@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/0098a6e93522fecc805d8900172003dc/transformed/preference-1.2.1/jars/classes.jar"
+      resolved="androidx.preference:preference:1.2.1"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/0098a6e93522fecc805d8900172003dc/transformed/preference-1.2.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.appcompat:appcompat:1.1.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/3a4dcd3e8c92efa77cfa193b658940d9/transformed/appcompat-1.1.0/jars/classes.jar"
+      resolved="androidx.appcompat:appcompat:1.1.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/3a4dcd3e8c92efa77cfa193b658940d9/transformed/appcompat-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.fragment:fragment-ktx:1.7.1@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/2e4c2e4e231b6a1dd462fb9cdc4ff977/transformed/jetified-fragment-ktx-1.7.1/jars/classes.jar"
+      resolved="androidx.fragment:fragment-ktx:1.7.1"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/2e4c2e4e231b6a1dd462fb9cdc4ff977/transformed/jetified-fragment-ktx-1.7.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.recyclerview:recyclerview:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/75e1bcd7a8b61b1e132d50e7766bfd37/transformed/recyclerview-1.0.0/jars/classes.jar"
+      resolved="androidx.recyclerview:recyclerview:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/75e1bcd7a8b61b1e132d50e7766bfd37/transformed/recyclerview-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.legacy:legacy-support-core-ui:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/cb98276ae8bdd946a2259a69bef27bdf/transformed/legacy-support-core-ui-1.0.0/jars/classes.jar"
+      resolved="androidx.legacy:legacy-support-core-ui:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/cb98276ae8bdd946a2259a69bef27bdf/transformed/legacy-support-core-ui-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.slidingpanelayout:slidingpanelayout:1.2.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/74ed8ceaa55f9ae57c7b49acd30346c2/transformed/slidingpanelayout-1.2.0/jars/classes.jar"
+      resolved="androidx.slidingpanelayout:slidingpanelayout:1.2.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/74ed8ceaa55f9ae57c7b49acd30346c2/transformed/slidingpanelayout-1.2.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.activity:activity-ktx:1.8.1@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/594d81b2ca4ffa5071fc50a56b570e77/transformed/jetified-activity-ktx-1.8.1/jars/classes.jar"
+      resolved="androidx.activity:activity-ktx:1.8.1"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/594d81b2ca4ffa5071fc50a56b570e77/transformed/jetified-activity-ktx-1.8.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.legacy:legacy-support-core-utils:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/6d6ee565ab495ccfff8140c2f79bcdec/transformed/legacy-support-core-utils-1.0.0/jars/classes.jar"
+      resolved="androidx.legacy:legacy-support-core-utils:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/6d6ee565ab495ccfff8140c2f79bcdec/transformed/legacy-support-core-utils-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-runtime-ktx:2.7.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/1da3d52bf544e2149dd46ce2061a20cf/transformed/jetified-lifecycle-runtime-ktx-2.7.0/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-runtime-ktx:2.7.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/1da3d52bf544e2149dd46ce2061a20cf/transformed/jetified-lifecycle-runtime-ktx-2.7.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/a1682fe25d19efcf6ed57ec9bfdc01f5/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/a1682fe25d19efcf6ed57ec9bfdc01f5/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.appcompat:appcompat-resources:1.1.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/30b0283ed69cc5a036226586199afb07/transformed/jetified-appcompat-resources-1.1.0/jars/classes.jar"
+      resolved="androidx.appcompat:appcompat-resources:1.1.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/30b0283ed69cc5a036226586199afb07/transformed/jetified-appcompat-resources-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.drawerlayout:drawerlayout:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/fd3810ce99ffe1cc26d54f0b91968d35/transformed/drawerlayout-1.0.0/jars/classes.jar"
+      resolved="androidx.drawerlayout:drawerlayout:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/fd3810ce99ffe1cc26d54f0b91968d35/transformed/drawerlayout-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.coordinatorlayout:coordinatorlayout:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/58a0920e123e93dd6aa702d27ab7530e/transformed/coordinatorlayout-1.0.0/jars/classes.jar"
+      resolved="androidx.coordinatorlayout:coordinatorlayout:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/58a0920e123e93dd6aa702d27ab7530e/transformed/coordinatorlayout-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.transition:transition:1.4.1@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/45af1ebc35cbf9d2d2886a132166b73a/transformed/transition-1.4.1/jars/classes.jar"
+      resolved="androidx.transition:transition:1.4.1"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/45af1ebc35cbf9d2d2886a132166b73a/transformed/transition-1.4.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.vectordrawable:vectordrawable-animated:1.1.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/a4220b5ee723fba7acc664a2b5c85228/transformed/vectordrawable-animated-1.1.0/jars/classes.jar"
+      resolved="androidx.vectordrawable:vectordrawable-animated:1.1.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/a4220b5ee723fba7acc664a2b5c85228/transformed/vectordrawable-animated-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.vectordrawable:vectordrawable:1.1.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/a955e1aaa27844724e860bd6269b5afd/transformed/vectordrawable-1.1.0/jars/classes.jar"
+      resolved="androidx.vectordrawable:vectordrawable:1.1.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/a955e1aaa27844724e860bd6269b5afd/transformed/vectordrawable-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/7c5a81a775ceb5f896270c240e3627f0/transformed/swiperefreshlayout-1.0.0/jars/classes.jar"
+      resolved="androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/7c5a81a775ceb5f896270c240e3627f0/transformed/swiperefreshlayout-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/3d3f16dd28e73e73ebdd49d75e0396da/transformed/asynclayoutinflater-1.0.0/jars/classes.jar"
+      resolved="androidx.asynclayoutinflater:asynclayoutinflater:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/3d3f16dd28e73e73ebdd49d75e0396da/transformed/asynclayoutinflater-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.savedstate:savedstate-ktx:1.2.1@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/ebca0abd79b4e189ce4efe6f41f957a4/transformed/jetified-savedstate-ktx-1.2.1/jars/classes.jar"
+      resolved="androidx.savedstate:savedstate-ktx:1.2.1"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/ebca0abd79b4e189ce4efe6f41f957a4/transformed/jetified-savedstate-ktx-1.2.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.profileinstaller:profileinstaller:1.3.1@aar"
       jars="/home/marypan/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/jars/classes.jar"
       resolved="androidx.profileinstaller:profileinstaller:1.3.1"
@@ -404,10 +693,82 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="androidx.datastore:datastore-preferences-external-protobuf:1.1.3@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore-preferences-external-protobuf/1.1.3/ddd0a2d64e3c928359c993d1291e535d5d7fc9a3/datastore-preferences-external-protobuf-1.1.3.jar"
+      resolved="androidx.datastore:datastore-preferences-external-protobuf:1.1.3"/>
+  <library
+      name="androidx.datastore:datastore-preferences-proto:1.1.3@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore-preferences-proto/1.1.3/6d7430ed8d2b5f2b8675dad8d196ba5dd710921b/datastore-preferences-proto-1.1.3.jar"
+      resolved="androidx.datastore:datastore-preferences-proto:1.1.3"/>
+  <library
+      name="androidx.datastore:datastore-preferences-core-jvm:1.1.3@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore-preferences-core-jvm/1.1.3/fb991f11389ccf2a5d5d4c99783ff958bc400/datastore-preferences-core-jvm-1.1.3.jar"
+      resolved="androidx.datastore:datastore-preferences-core-jvm:1.1.3"/>
+  <library
+      name="androidx.datastore:datastore-core-okio-jvm:1.1.3@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/androidx.datastore/datastore-core-okio-jvm/1.1.3/ce08f132812044a9778547b299fd812e34dbd602/datastore-core-okio-jvm-1.1.3.jar"
+      resolved="androidx.datastore:datastore-core-okio-jvm:1.1.3"/>
+  <library
+      name="androidx.datastore:datastore-core-android:1.1.3@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/1ba8599b6014e514325b6a37b5077642/transformed/jetified-datastore-core-release/jars/classes.jar"
+      resolved="androidx.datastore:datastore-core-android:1.1.3"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/1ba8599b6014e514325b6a37b5077642/transformed/jetified-datastore-core-release"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.datastore:datastore-preferences-android:1.1.3@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/02cddce53ae6e54afa639a8fcdb8b322/transformed/jetified-datastore-preferences-release/jars/classes.jar"
+      resolved="androidx.datastore:datastore-preferences-android:1.1.3"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/02cddce53ae6e54afa639a8fcdb8b322/transformed/jetified-datastore-preferences-release"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.datastore:datastore-android:1.1.3@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/c7cbd00988e28f46cac66dd959ae6532/transformed/jetified-datastore-release/jars/classes.jar"
+      resolved="androidx.datastore:datastore-android:1.1.3"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/c7cbd00988e28f46cac66dd959ae6532/transformed/jetified-datastore-release"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.collection:collection-ktx:1.1.0@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/androidx.collection/collection-ktx/1.1.0/f807b2f366f7b75142a67d2f3c10031065b5168/collection-ktx-1.1.0.jar"
+      resolved="androidx.collection:collection-ktx:1.1.0"/>
+  <library
       name="androidx.interpolator:interpolator:1.0.0@aar"
       jars="/home/marypan/.gradle/caches/8.10.2/transforms/ccaaf8ba0ff17d4bbcf5fc9064ae7a64/transformed/interpolator-1.0.0/jars/classes.jar"
       resolved="androidx.interpolator:interpolator:1.0.0"
       folder="/home/marypan/.gradle/caches/8.10.2/transforms/ccaaf8ba0ff17d4bbcf5fc9064ae7a64/transformed/interpolator-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.cursoradapter:cursoradapter:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/e4e9d33e8be7718e1e9997a4b8a9b898/transformed/cursoradapter-1.0.0/jars/classes.jar"
+      resolved="androidx.cursoradapter:cursoradapter:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/e4e9d33e8be7718e1e9997a4b8a9b898/transformed/cursoradapter-1.0.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -425,6 +786,70 @@
       jars="/home/marypan/.gradle/caches/8.10.2/transforms/47506b70b93177473c53f4d5d7e77c91/transformed/jetified-core-1.0.0/jars/classes.jar"
       resolved="androidx.window.extensions.core:core:1.0.0"
       folder="/home/marypan/.gradle/caches/8.10.2/transforms/47506b70b93177473c53f4d5d7e77c91/transformed/jetified-core-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.documentfile:documentfile:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/76a0dd850d9f18b6d5dce2588e83d61b/transformed/documentfile-1.0.0/jars/classes.jar"
+      resolved="androidx.documentfile:documentfile:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/76a0dd850d9f18b6d5dce2588e83d61b/transformed/documentfile-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/e62025dd32ba7b1543d2002b823cb58b/transformed/localbroadcastmanager-1.0.0/jars/classes.jar"
+      resolved="androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/e62025dd32ba7b1543d2002b823cb58b/transformed/localbroadcastmanager-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.print:print:1.0.0@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/768c044a1b4db4aa31548ac9b4db55c8/transformed/print-1.0.0/jars/classes.jar"
+      resolved="androidx.print:print:1.0.0"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/768c044a1b4db4aa31548ac9b4db55c8/transformed/print-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.22@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-parcelize-runtime/1.9.22/de4a21d6560cadd035c69ba3af3ad1afecc95299/kotlin-parcelize-runtime-1.9.22.jar"
+      resolved="org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.22"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.9.22@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.9.22/ee3bc0c3b55cb516ac92d6a093e1b939166b86a2/kotlin-android-extensions-runtime-1.9.22.jar"
+      resolved="org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.9.22"/>
+  <library
+      name="com.squareup.okio:okio-jvm:3.4.0@jar"
+      jars="/home/marypan/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio-jvm/3.4.0/4e8bd78a52ab935ce383d0092646922154295e54/okio-jvm-3.4.0.jar"
+      resolved="com.squareup.okio:okio-jvm:3.4.0"/>
+  <library
+      name="eu.simonbinder:sqlite3-native-library:3.49.1+1@aar"
+      jars="/home/marypan/.gradle/caches/8.10.2/transforms/1ceee93b1ff1a59698930f5fa11c0c1c/transformed/jetified-sqlite3-native-library-3.49.1+1/jars/classes.jar"
+      resolved="eu.simonbinder:sqlite3-native-library:3.49.1+1"
+      folder="/home/marypan/.gradle/caches/8.10.2/transforms/1ceee93b1ff1a59698930f5fa11c0c1c/transformed/jetified-sqlite3-native-library-3.49.1+1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
