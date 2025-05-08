@@ -8,4 +8,4 @@ Cat Tinder - это популярное приложение для кошач�
 ![Page with cat info](https://github.com/marybal7/cat_tinder_project/blob/main/demo_images/cat_tinder_demo_info.png)
 ![Page with filter_of_cats](https://github.com/marybal7/cat_tinder_project/blob/main/demo_images/filter.jpg)
 ![Page with snackbar](https://github.com/marybal7/cat_tinder_project/blob/main/demo_images/snack_bar.png)
-![Page with nomorecats](https://github.com/marybal7/cat_tinder_project/blob/main/demo_images/nomorecats.png)
+![Page with nomorecats](https://github.com/marybal7/cat_tinder_project/blob/main/demo_images/nomorecats.jpg)
